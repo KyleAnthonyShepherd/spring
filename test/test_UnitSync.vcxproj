@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2886492B-CF1D-3745-84C7-50B021DB26E2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>test_UnitSync</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\test\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test_UnitSync.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test_UnitSync</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\test\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test_UnitSync.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test_UnitSync</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\test\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">test_UnitSync.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">test_UnitSync</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\test\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">test_UnitSync.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">test_UnitSync</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\src-generated\engine;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\asio\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\7z;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\jsoncpp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\libcpuid\libcpuid;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\smmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4018;4800;4305;4514;4996;4710;4820;4146;4711</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;DEBUG;NO_CATCH_EXCEPTIONS;UNITSYNC;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;UNIT_TEST;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;WINDOWS;_CRT_SECURE_NO_WARNINGS;_WINDOWS;DEBUG;NO_CATCH_EXCEPTIONS;UNITSYNC;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR=\"\";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;UNIT_TEST;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\src-generated\engine;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\asio\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\7z;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\jsoncpp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\libcpuid\libcpuid;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\smmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;DEBUG;NO_CATCH_EXCEPTIONS;UNITSYNC;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;UNIT_TEST;CMAKE_INTDIR="Debug";</PreprocessorDefinitions>
+      <IncludePaths>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\src-generated\engine;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\asio\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\7z;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\jsoncpp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\libcpuid\libcpuid;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\smmalloc;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\src-generated\engine;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\asio\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\7z;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\jsoncpp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\libcpuid\libcpuid;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\smmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\tools\unitsync\Debug\unitsync.lib;..\rts\lib\libcpuid\libcpuid\Debug\cpuid.lib;..\tools\pr-downloader\src\lib\jsoncpp\Debug\pr-jsoncpp.lib;..\rts\lib\lua\Debug\lua.lib;..\rts\lib\streflop\Debug\streflop.lib;..\rts\lib\headlessStubs\Debug\headlessStubs.lib;..\rts\System\FileSystem\Archives\Debug\archives.lib;..\tools\pr-downloader\src\lib\7z\Debug\7zip.lib;..\rts\lib\minizip\Debug\minizip.lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\lib\zlib.lib;..\rts\lib\smmalloc\Debug\smmalloc.lib;iphlpapi.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/test/Debug/test_UnitSync.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/test/Debug/test_UnitSync.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\src-generated\engine;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\asio\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\7z;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\jsoncpp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\libcpuid\libcpuid;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\smmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4244;4018;4800;4305;4514;4996;4710;4820;4146;4711</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;UNITSYNC;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;UNIT_TEST;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;WINDOWS;_CRT_SECURE_NO_WARNINGS;_WINDOWS;NDEBUG;UNITSYNC;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR=\"\";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;UNIT_TEST;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\src-generated\engine;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\asio\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\7z;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\jsoncpp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\libcpuid\libcpuid;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\smmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;UNITSYNC;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;UNIT_TEST;CMAKE_INTDIR="Release";</PreprocessorDefinitions>
+      <IncludePaths>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\src-generated\engine;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\asio\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\7z;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\jsoncpp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\libcpuid\libcpuid;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\smmalloc;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\src-generated\engine;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\asio\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\7z;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\jsoncpp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\libcpuid\libcpuid;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\smmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\tools\unitsync\Release\unitsync.lib;..\rts\lib\libcpuid\libcpuid\Release\cpuid.lib;..\tools\pr-downloader\src\lib\jsoncpp\Release\pr-jsoncpp.lib;..\rts\lib\lua\Release\lua.lib;..\rts\lib\streflop\Release\streflop.lib;..\rts\lib\headlessStubs\Release\headlessStubs.lib;..\rts\System\FileSystem\Archives\Release\archives.lib;..\tools\pr-downloader\src\lib\7z\Release\7zip.lib;..\rts\lib\minizip\Release\minizip.lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\lib\zlib.lib;..\rts\lib\smmalloc\Release\smmalloc.lib;iphlpapi.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/test/Release/test_UnitSync.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ProgramDataBaseFile>T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/test/Release/test_UnitSync.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\src-generated\engine;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\asio\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\7z;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\jsoncpp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\libcpuid\libcpuid;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\smmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4244;4018;4800;4305;4514;4996;4710;4820</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;UNITSYNC;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;UNIT_TEST;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;WINDOWS;_CRT_SECURE_NO_WARNINGS;_WINDOWS;NDEBUG;UNITSYNC;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR=\"\";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;UNIT_TEST;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\src-generated\engine;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\asio\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\7z;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\jsoncpp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\libcpuid\libcpuid;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\smmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;UNITSYNC;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;UNIT_TEST;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\src-generated\engine;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\asio\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\7z;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\jsoncpp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\libcpuid\libcpuid;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\smmalloc;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\src-generated\engine;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\asio\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\7z;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\jsoncpp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\libcpuid\libcpuid;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\smmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\tools\unitsync\MinSizeRel\unitsync.lib;..\rts\lib\libcpuid\libcpuid\MinSizeRel\cpuid.lib;..\tools\pr-downloader\src\lib\jsoncpp\MinSizeRel\pr-jsoncpp.lib;..\rts\lib\lua\MinSizeRel\lua.lib;..\rts\lib\streflop\MinSizeRel\streflop.lib;..\rts\lib\headlessStubs\MinSizeRel\headlessStubs.lib;..\rts\System\FileSystem\Archives\MinSizeRel\archives.lib;..\tools\pr-downloader\src\lib\7z\MinSizeRel\7zip.lib;..\rts\lib\minizip\MinSizeRel\minizip.lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\lib\zlib.lib;..\rts\lib\smmalloc\MinSizeRel\smmalloc.lib;iphlpapi.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/test/MinSizeRel/test_UnitSync.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/test/MinSizeRel/test_UnitSync.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\src-generated\engine;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\asio\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\7z;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\jsoncpp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\libcpuid\libcpuid;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\smmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4018;4800;4305;4514;4996;4710;4820;4146;4711</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;UNITSYNC;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;UNIT_TEST;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;WINDOWS;_CRT_SECURE_NO_WARNINGS;_WINDOWS;NDEBUG;UNITSYNC;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR=\"\";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;UNIT_TEST;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\src-generated\engine;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\asio\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\7z;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\jsoncpp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\libcpuid\libcpuid;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\smmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;UNITSYNC;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;UNIT_TEST;CMAKE_INTDIR="RelWithDebInfo";</PreprocessorDefinitions>
+      <IncludePaths>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\src-generated\engine;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\asio\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\7z;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\jsoncpp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\libcpuid\libcpuid;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\smmalloc;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\src-generated\engine;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\asio\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\7z;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\pr-downloader\src\lib\jsoncpp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\libcpuid\libcpuid;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\smmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\tools\unitsync\RelWithDebInfo\unitsync.lib;..\rts\lib\libcpuid\libcpuid\RelWithDebInfo\cpuid.lib;..\tools\pr-downloader\src\lib\jsoncpp\RelWithDebInfo\pr-jsoncpp.lib;..\rts\lib\lua\RelWithDebInfo\lua.lib;..\rts\lib\streflop\RelWithDebInfo\streflop.lib;..\rts\lib\headlessStubs\RelWithDebInfo\headlessStubs.lib;..\rts\System\FileSystem\Archives\RelWithDebInfo\archives.lib;..\tools\pr-downloader\src\lib\7z\RelWithDebInfo\7zip.lib;..\rts\lib\minizip\RelWithDebInfo\minizip.lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\lib\zlib.lib;..\rts\lib\smmalloc\RelWithDebInfo\smmalloc.lib;iphlpapi.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/test/RelWithDebInfo/test_UnitSync.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ProgramDataBaseFile>T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/test/RelWithDebInfo/test_UnitSync.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\test\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -ST:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring -BT:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine --check-stamp-file T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\CMakeFiles\cmake.verify_globs;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\test\tools\CompileFailTest\CompileFailTest.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -ST:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring -BT:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine --check-stamp-file T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\CMakeFiles\cmake.verify_globs;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\test\tools\CompileFailTest\CompileFailTest.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -ST:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring -BT:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine --check-stamp-file T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\CMakeFiles\cmake.verify_globs;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\test\tools\CompileFailTest\CompileFailTest.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -ST:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring -BT:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine --check-stamp-file T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\CMakeFiles\cmake.verify_globs;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\test\tools\CompileFailTest\CompileFailTest.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\test\unitsync\testUnitSync.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Lua\LuaMemPool.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\GlobalConfig.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Misc\SpringTime.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Platform\CpuID.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Platform\Threading.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Platform\Win\CriticalSection.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Platform\Win\Future.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\SafeCStrings.c" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Log\Backend.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Log\LogUtil.c" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Log\DefaultFilter.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Log\DefaultFormatter.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Log\FramePrefixer.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Log\ConsoleSink.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Log\StreamSink.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\ZERO_CHECK.vcxproj">
+      <Project>{8490226C-108B-3285-AF6C-02B1B01830CC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\tools\pr-downloader\src\lib\7z\7zip.vcxproj">
+      <Project>{0D62C1AA-F9F2-3FEE-BED9-557BA64B704D}</Project>
+      <Name>7zip</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\System\FileSystem\Archives\archives.vcxproj">
+      <Project>{634E88B1-C666-3EE5-9CD5-8EC549A9F2B5}</Project>
+      <Name>archives</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\libcpuid\libcpuid\cpuid.vcxproj">
+      <Project>{B0B27032-7CF1-3766-AE26-21035A09A380}</Project>
+      <Name>cpuid</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\headlessStubs\headlessStubs.vcxproj">
+      <Project>{85DFBA36-CC3D-3BBE-8D7B-A6F5A377F6C2}</Project>
+      <Name>headlessStubs</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\lua\lua.vcxproj">
+      <Project>{1F540109-38D1-323F-A205-E05DC3EF4D55}</Project>
+      <Name>lua</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\minizip\minizip.vcxproj">
+      <Project>{C6B22F7C-E9B0-37B7-B43A-D333AF5C181A}</Project>
+      <Name>minizip</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\tools\pr-downloader\src\lib\jsoncpp\pr-jsoncpp.vcxproj">
+      <Project>{FE7D41ED-262E-3942-82D2-524F5D68472E}</Project>
+      <Name>pr-jsoncpp</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\smmalloc\smmalloc.vcxproj">
+      <Project>{EA888528-0479-3271-A098-B603616A36FC}</Project>
+      <Name>smmalloc</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\cont\base\springcontent\springcontent.sdz.vcxproj">
+      <Project>{D23D0C73-4F27-3A0B-BA18-40228C827AD2}</Project>
+      <Name>springcontent.sdz</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\streflop\streflop.vcxproj">
+      <Project>{E6CD7F94-EF8C-33B0-AC35-1CBC8A7C488B}</Project>
+      <Name>streflop</Name>
+    </ProjectReference>
+    <ProjectReference Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\tools\unitsync\unitsync.vcxproj">
+      <Project>{DF9A4D0A-E0C8-3ECE-B56C-C322217A7079}</Project>
+      <Name>unitsync</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

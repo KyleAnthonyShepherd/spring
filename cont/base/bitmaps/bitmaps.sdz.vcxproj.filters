@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\CMakeFiles\f92181695a39e9c2dc8d4fbc05435606\bitmaps.sdz.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\CMakeFiles\881c65b2dfc677a87493f0e0d4b47f71\bitmaps.sdz.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\cont\base\bitmaps\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\cont\base\bitmaps\CMakeFiles\bitmaps.sdz" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{74F2E1AC-6A3E-33E2-AEFA-A65E6342BF7F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

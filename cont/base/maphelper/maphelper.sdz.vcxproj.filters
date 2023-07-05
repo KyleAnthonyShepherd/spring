@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\CMakeFiles\2a45484fb88a6107c4256b606426c138\maphelper.sdz.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\CMakeFiles\d7959255aa54cac2fd486946b8a9a3e7\maphelper.sdz.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\cont\base\maphelper\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\cont\base\maphelper\CMakeFiles\maphelper.sdz" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{74F2E1AC-6A3E-33E2-AEFA-A65E6342BF7F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

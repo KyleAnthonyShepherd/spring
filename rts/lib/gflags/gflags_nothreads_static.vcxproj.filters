@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\gflags\src\gflags.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\gflags\src\gflags_reporting.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\gflags\src\gflags_completions.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\gflags\src\windows_port.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\gflags\include\gflags\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\gflags\src\util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\gflags\src\mutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\gflags\src\windows_port.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\gflags\include\gflags\gflags.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\gflags\include\gflags\gflags_declare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\gflags\include\gflags\gflags_completions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\gflags\include\gflags\gflags_gflags.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\gflags\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{880D0856-6D7F-3FEA-8AAD-6743FF30246D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CC7D20B3-5BCF-3B32-BDC8-7E0AD15418B4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

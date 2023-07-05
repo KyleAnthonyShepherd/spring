@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\unitsync\test\lua2php.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\unitsync\test\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CC7D20B3-5BCF-3B32-BDC8-7E0AD15418B4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

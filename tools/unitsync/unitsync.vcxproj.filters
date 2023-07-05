@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\FileSystem\ArchiveNameResolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\FileSystem\ArchiveLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\FileSystem\ArchiveScanner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\FileSystem\CacheDir.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\FileSystem\DataDirLocater.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\FileSystem\DataDirsAccess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\FileSystem\FileFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\FileSystem\FileHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\FileSystem\FileSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\FileSystem\FileSystemAbstraction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\FileSystem\FileSystemInitializer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\FileSystem\GZFileHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\FileSystem\RapidHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\FileSystem\SimpleParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\FileSystem\VFSHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Platform\CpuID.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Platform\Threading.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Platform\Win\CriticalSection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Platform\Win\Future.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Log\Backend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Log\DefaultFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Log\DefaultFormatter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Log\FramePrefixer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Log\LogSinkHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Log\LogUtil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Log\TracySink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Log\FileSink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Log\OutputDebugStringSink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\ExternalAI\LuaAIImplHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Game\GameVersion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Lua\LuaConstEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Lua\LuaMemPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Lua\LuaParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Lua\LuaUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Lua\LuaIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Map\MapParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Map\SMF\SMFMapFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\SideParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\CommandAI\Command.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\GlobalConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Config\ConfigHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Config\ConfigLocater.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Config\ConfigSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Config\ConfigVariable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Misc\SpringTime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Platform\Misc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Platform\ScopedFileLock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Threading\ThreadPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Sync\SHA512.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\CRC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\float4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\LogOutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Option.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\SafeVector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\SafeCStrings.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\TdfParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\UriParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\StringUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\System\Platform\Win\WinVersion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\unitsync\unitsync.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\unitsync\LuaParserAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\unitsync\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\tools\unitsync\exports.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CC7D20B3-5BCF-3B32-BDC8-7E0AD15418B4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

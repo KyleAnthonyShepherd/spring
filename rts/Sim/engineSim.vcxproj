@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1C4829AB-EC99-3496-A46A-70F393295BA3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>engineSim</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\Sim\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">engineSim.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">engineSim</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\Sim\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">engineSim.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">engineSim</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\Sim\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">engineSim.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">engineSim</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\Sim\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">engineSim.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">engineSim</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\lua\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\include\AL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\IL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\SDL2;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\tracy\public;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4018;4800;4305;4514;4996;4710;4820;4146;4711</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;DEBUG;NO_CATCH_EXCEPTIONS;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;TRACY_ON_DEMAND;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;WINDOWS;_CRT_SECURE_NO_WARNINGS;_WINDOWS;DEBUG;NO_CATCH_EXCEPTIONS;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR=\"\";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;TRACY_ON_DEMAND;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\lua\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\include\AL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\IL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\SDL2;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\tracy\public;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;DEBUG;NO_CATCH_EXCEPTIONS;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;TRACY_ON_DEMAND;CMAKE_INTDIR="Debug";</PreprocessorDefinitions>
+      <IncludePaths>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\lua\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\include\AL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\IL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\SDL2;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\tracy\public;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\lua\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\include\AL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\IL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\SDL2;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\tracy\public;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\lua\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\include\AL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\IL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\SDL2;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\tracy\public;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4244;4018;4800;4305;4514;4996;4710;4820;4146;4711</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;TRACY_ON_DEMAND;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;WINDOWS;_CRT_SECURE_NO_WARNINGS;_WINDOWS;NDEBUG;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR=\"\";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;TRACY_ON_DEMAND;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\lua\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\include\AL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\IL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\SDL2;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\tracy\public;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;TRACY_ON_DEMAND;CMAKE_INTDIR="Release";</PreprocessorDefinitions>
+      <IncludePaths>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\lua\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\include\AL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\IL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\SDL2;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\tracy\public;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\lua\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\include\AL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\IL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\SDL2;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\tracy\public;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\lua\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\include\AL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\IL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\SDL2;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\tracy\public;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4244;4018;4800;4305;4514;4996;4710;4820</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;TRACY_ON_DEMAND;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;WINDOWS;_CRT_SECURE_NO_WARNINGS;_WINDOWS;NDEBUG;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR=\"\";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;TRACY_ON_DEMAND;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\lua\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\include\AL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\IL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\SDL2;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\tracy\public;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;TRACY_ON_DEMAND;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\lua\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\include\AL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\IL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\SDL2;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\tracy\public;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\lua\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\include\AL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\IL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\SDL2;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\tracy\public;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\lua\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\include\AL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\IL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\SDL2;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\tracy\public;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4018;4800;4305;4514;4996;4710;4820;4146;4711</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;TRACY_ON_DEMAND;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;WINDOWS;_CRT_SECURE_NO_WARNINGS;_WINDOWS;NDEBUG;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR=\"\";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;TRACY_ON_DEMAND;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\lua\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\include\AL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\IL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\SDL2;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\tracy\public;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;TRACY_ON_DEMAND;CMAKE_INTDIR="RelWithDebInfo";</PreprocessorDefinitions>
+      <IncludePaths>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\lua\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\include\AL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\IL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\SDL2;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\tracy\public;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\lua\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\include\AL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\IL;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include\SDL2;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\tracy\public;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/rts/Sim/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -ST:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring -BT:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine --check-stamp-file T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/rts/Sim/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\Sim\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/rts/Sim/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -ST:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring -BT:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine --check-stamp-file T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/rts/Sim/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\Sim\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/rts/Sim/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -ST:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring -BT:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine --check-stamp-file T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/rts/Sim/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\Sim\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/rts/Sim/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -ST:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring -BT:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine --check-stamp-file T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/rts/Sim/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\Sim\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Features\Feature.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Features\FeatureDef.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Features\FeatureDefHandler.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Features\FeatureHandler.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\AllyTeam.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\BuildingMaskMap.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\CategoryHandler.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\CollisionHandler.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\CollisionVolume.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\CommonDefHandler.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\DamageArray.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\DamageArrayHandler.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\DefinitionTag.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\GeometricObjects.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\GlobalSynced.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\GroundBlockingObjectMap.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\InterceptHandler.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\LosHandler.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\LosMap.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\ModInfo.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\NanoPieceCache.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\QuadField.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\Resource.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\ResourceHandler.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\ResourceMapAnalyzer.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\SideParser.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\SimObjectIDPool.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\SmoothHeightMesh.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\Team.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\TeamBase.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\TeamHandler.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\TeamStatistics.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Misc\Wind.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\MoveTypes\AAirMoveType.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\MoveTypes\StrafeAirMoveType.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\MoveTypes\GroundMoveType.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\MoveTypes\MoveDefHandler.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\MoveTypes\MoveMath\GroundMoveMath.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\MoveTypes\MoveMath\HoverMoveMath.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\MoveTypes\MoveMath\MoveMath.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\MoveTypes\MoveMath\ShipMoveMath.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\MoveTypes\MoveType.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\MoveTypes\MoveTypeFactory.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\MoveTypes\ScriptMoveType.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\MoveTypes\StaticMoveType.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\MoveTypes\HoverAirMoveType.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Objects\SolidObject.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Objects\SolidObjectDef.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Objects\WorldObject.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Path\QTPFS\Node.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Path\QTPFS\NodeLayer.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Path\QTPFS\PathCache.cpp">
+      <ObjectFileName>$(IntDir)/Path/QTPFS/PathCache.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Path\QTPFS\PathSearch.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Path\QTPFS\PathManager.cpp">
+      <ObjectFileName>$(IntDir)/Path/QTPFS/PathManager.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Path\HAPFS\PathFinderDef.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Path\HAPFS\PathFlowMap.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Path\HAPFS\IPathFinder.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Path\HAPFS\PathCache.cpp">
+      <ObjectFileName>$(IntDir)/Path/HAPFS/PathCache.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Path\HAPFS\PathEstimator.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Path\HAPFS\PathFinder.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Path\HAPFS\PathHeatMap.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Path\HAPFS\PathingState.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Path\HAPFS\PathManager.cpp">
+      <ObjectFileName>$(IntDir)/Path/HAPFS/PathManager.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Path\IPathController.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Path\IPathManager.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Projectiles\ExpGenSpawnable.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Projectiles\ExpGenSpawner.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Projectiles\ExplosionListener.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Projectiles\ExplosionGenerator.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Projectiles\FireProjectile.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Projectiles\FlareProjectile.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Projectiles\PieceProjectile.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Projectiles\Projectile.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Projectiles\ProjectileHandler.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Projectiles\WeaponProjectiles\BeamLaserProjectile.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Projectiles\WeaponProjectiles\EmgProjectile.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Projectiles\WeaponProjectiles\ExplosiveProjectile.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Projectiles\WeaponProjectiles\FireBallProjectile.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Projectiles\WeaponProjectiles\FlameProjectile.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Projectiles\WeaponProjectiles\LargeBeamLaserProjectile.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Projectiles\WeaponProjectiles\LaserProjectile.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Projectiles\WeaponProjectiles\LightningProjectile.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Projectiles\WeaponProjectiles\MissileProjectile.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Projectiles\WeaponProjectiles\StarburstProjectile.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Projectiles\WeaponProjectiles\TorpedoProjectile.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Projectiles\WeaponProjectiles\WeaponProjectile.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Projectiles\WeaponProjectiles\WeaponProjectileFactory.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\BuildInfo.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\CommandAI\AirCAI.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\CommandAI\BuilderCAI.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\CommandAI\Command.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\CommandAI\CommandAI.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\CommandAI\CommandDescription.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\CommandAI\FactoryCAI.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\CommandAI\MobileCAI.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\Scripts\CobEngine.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\Scripts\CobFile.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\Scripts\CobFileHandler.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\Scripts\CobInstance.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\Scripts\CobScriptNames.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\Scripts\CobThread.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\Scripts\LuaScriptNames.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\Scripts\LuaUnitScript.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\Scripts\NullUnitScript.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\Scripts\UnitScript.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\Scripts\UnitScriptEngine.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\Scripts\UnitScriptFactory.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\Unit.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\UnitDef.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\UnitDefHandler.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\UnitHandler.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\UnitLoader.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\UnitToolTipMap.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\UnitTypes\Builder.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\UnitTypes\Building.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\UnitTypes\ExtractorBuilding.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Units\UnitTypes\Factory.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Weapons\BeamLaser.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Weapons\BombDropper.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Weapons\Cannon.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Weapons\DGunWeapon.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Weapons\EmgCannon.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Weapons\FlameThrower.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Weapons\LaserCannon.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Weapons\LightningCannon.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Weapons\MeleeWeapon.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Weapons\MissileLauncher.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Weapons\NoWeapon.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Weapons\PlasmaRepulser.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Weapons\Rifle.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Weapons\StarburstLauncher.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Weapons\TorpedoLauncher.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Weapons\Weapon.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Weapons\WeaponDef.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Weapons\WeaponDefHandler.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Weapons\WeaponLoader.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\Sim\Weapons\WeaponTarget.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\ZERO_CHECK.vcxproj">
+      <Project>{8490226C-108B-3285-AF6C-02B1B01830CC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\tracy\TracyClient.vcxproj">
+      <Project>{C900BDE4-1231-3679-94F4-05A94C89C949}</Project>
+      <Name>TracyClient</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

@@ -1,0 +1,18 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.23/Modules/CheckCXXSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/CheckTypeSize.c.in
+C:/Program Files/CMake/share/cmake-3.23/Modules/CheckTypeSize.cmake
+T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/CMakeFiles/CheckTypeSize/__int32.cpp
+T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/CMakeFiles/cmake.verify_globs
+T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/rts/lib/gflags/CMakeLists.txt
+T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/rts/lib/gflags/cmake/config.cmake.in
+T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/rts/lib/gflags/cmake/utils.cmake
+T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/rts/lib/gflags/cmake/version.cmake.in
+T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/rts/lib/gflags/src/config.h.in
+T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/rts/lib/gflags/src/gflags.h.in
+T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/rts/lib/gflags/src/gflags_completions.h.in
+T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/rts/lib/gflags/src/gflags_declare.h.in
+T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/rts/lib/gflags/src/gflags_ns.h.in

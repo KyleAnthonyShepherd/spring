@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E9D15829-12C8-3C3A-B57C-0AC1D08338E0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>assimp</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\code\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assimp.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assimp-vc140-mt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\code\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assimp.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assimp-vc140-mt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\code\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">assimp.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">assimp-vc140-mt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\code\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">assimp.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">assimp-vc140-mt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\.;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\rapidjson\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\unzip;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\contrib\irrXML;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\openddlparser\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4018;4800;4305;4514;4996;4710;4820;4146;4711</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;DEBUG;NO_CATCH_EXCEPTIONS;ASSIMP_BUILD_NO_OWN_ZLIB;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_EXPORT;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_NO_AMF_IMPORTER;ASSIMP_BUILD_NO_AMF_EXPORTER;ASSIMP_BUILD_NO_AC_IMPORTER;ASSIMP_BUILD_NO_AC_EXPORTER;ASSIMP_BUILD_NO_ASE_IMPORTER;ASSIMP_BUILD_NO_ASE_EXPORTER;ASSIMP_BUILD_NO_ASSBIN_IMPORTER;ASSIMP_BUILD_NO_ASSBIN_EXPORTER;ASSIMP_BUILD_NO_ASSXML_IMPORTER;ASSIMP_BUILD_NO_ASSXML_EXPORTER;ASSIMP_BUILD_NO_B3D_IMPORTER;ASSIMP_BUILD_NO_B3D_EXPORTER;ASSIMP_BUILD_NO_BVH_IMPORTER;ASSIMP_BUILD_NO_BVH_EXPORTER;ASSIMP_BUILD_NO_DXF_IMPORTER;ASSIMP_BUILD_NO_DXF_EXPORTER;ASSIMP_BUILD_NO_CSM_IMPORTER;ASSIMP_BUILD_NO_CSM_EXPORTER;ASSIMP_BUILD_NO_HMP_IMPORTER;ASSIMP_BUILD_NO_HMP_EXPORTER;ASSIMP_BUILD_NO_IRRMESH_IMPORTER;ASSIMP_BUILD_NO_IRRMESH_EXPORTER;ASSIMP_BUILD_NO_IRR_IMPORTER;ASSIMP_BUILD_NO_IRR_EXPORTER;ASSIMP_BUILD_NO_LWS_IMPORTER;ASSIMP_BUILD_NO_LWS_EXPORTER;ASSIMP_BUILD_NO_MD2_IMPORTER;ASSIMP_BUILD_NO_MD2_EXPORTER;ASSIMP_BUILD_NO_MD3_IMPORTER;ASSIMP_BUILD_NO_MD3_EXPORTER;ASSIMP_BUILD_NO_MD5_IMPORTER;ASSIMP_BUILD_NO_MD5_EXPORTER;ASSIMP_BUILD_NO_MDC_IMPORTER;ASSIMP_BUILD_NO_MDC_EXPORTER;ASSIMP_BUILD_NO_MDL_IMPORTER;ASSIMP_BUILD_NO_MDL_EXPORTER;ASSIMP_BUILD_NO_NFF_IMPORTER;ASSIMP_BUILD_NO_NFF_EXPORTER;ASSIMP_BUILD_NO_NDO_IMPORTER;ASSIMP_BUILD_NO_NDO_EXPORTER;ASSIMP_BUILD_NO_OFF_IMPORTER;ASSIMP_BUILD_NO_OFF_EXPORTER;ASSIMP_BUILD_NO_OGRE_IMPORTER;ASSIMP_BUILD_NO_OGRE_EXPORTER;ASSIMP_BUILD_NO_OPENGEX_IMPORTER;ASSIMP_BUILD_NO_OPENGEX_EXPORTER;ASSIMP_BUILD_NO_PLY_IMPORTER;ASSIMP_BUILD_NO_PLY_EXPORTER;ASSIMP_BUILD_NO_MS3D_IMPORTER;ASSIMP_BUILD_NO_MS3D_EXPORTER;ASSIMP_BUILD_NO_COB_IMPORTER;ASSIMP_BUILD_NO_COB_EXPORTER;ASSIMP_BUILD_NO_IFC_IMPORTER;ASSIMP_BUILD_NO_IFC_EXPORTER;ASSIMP_BUILD_NO_XGL_IMPORTER;ASSIMP_BUILD_NO_XGL_EXPORTER;ASSIMP_BUILD_NO_FBX_IMPORTER;ASSIMP_BUILD_NO_FBX_EXPORTER;ASSIMP_BUILD_NO_Q3D_IMPORTER;ASSIMP_BUILD_NO_Q3D_EXPORTER;ASSIMP_BUILD_NO_Q3BSP_IMPORTER;ASSIMP_BUILD_NO_Q3BSP_EXPORTER;ASSIMP_BUILD_NO_RAW_IMPORTER;ASSIMP_BUILD_NO_RAW_EXPORTER;ASSIMP_BUILD_NO_SIB_IMPORTER;ASSIMP_BUILD_NO_SIB_EXPORTER;ASSIMP_BUILD_NO_SMD_IMPORTER;ASSIMP_BUILD_NO_SMD_EXPORTER;ASSIMP_BUILD_NO_STL_IMPORTER;ASSIMP_BUILD_NO_STL_EXPORTER;ASSIMP_BUILD_NO_TERRAGEN_IMPORTER;ASSIMP_BUILD_NO_TERRAGEN_EXPORTER;ASSIMP_BUILD_NO_3D_IMPORTER;ASSIMP_BUILD_NO_3D_EXPORTER;ASSIMP_BUILD_NO_X_IMPORTER;ASSIMP_BUILD_NO_X_EXPORTER;ASSIMP_BUILD_NO_X3D_IMPORTER;ASSIMP_BUILD_NO_X3D_EXPORTER;ASSIMP_BUILD_NO_GLTF_IMPORTER;ASSIMP_BUILD_NO_GLTF_EXPORTER;ASSIMP_BUILD_NO_3MF_IMPORTER;ASSIMP_BUILD_NO_3MF_EXPORTER;ASSIMP_BUILD_NO_MMD_IMPORTER;ASSIMP_BUILD_NO_MMD_EXPORTER;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;WINDOWS;_CRT_SECURE_NO_WARNINGS;_WINDOWS;DEBUG;NO_CATCH_EXCEPTIONS;ASSIMP_BUILD_NO_OWN_ZLIB;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR=\"\";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_EXPORT;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_NO_AMF_IMPORTER;ASSIMP_BUILD_NO_AMF_EXPORTER;ASSIMP_BUILD_NO_AC_IMPORTER;ASSIMP_BUILD_NO_AC_EXPORTER;ASSIMP_BUILD_NO_ASE_IMPORTER;ASSIMP_BUILD_NO_ASE_EXPORTER;ASSIMP_BUILD_NO_ASSBIN_IMPORTER;ASSIMP_BUILD_NO_ASSBIN_EXPORTER;ASSIMP_BUILD_NO_ASSXML_IMPORTER;ASSIMP_BUILD_NO_ASSXML_EXPORTER;ASSIMP_BUILD_NO_B3D_IMPORTER;ASSIMP_BUILD_NO_B3D_EXPORTER;ASSIMP_BUILD_NO_BVH_IMPORTER;ASSIMP_BUILD_NO_BVH_EXPORTER;ASSIMP_BUILD_NO_DXF_IMPORTER;ASSIMP_BUILD_NO_DXF_EXPORTER;ASSIMP_BUILD_NO_CSM_IMPORTER;ASSIMP_BUILD_NO_CSM_EXPORTER;ASSIMP_BUILD_NO_HMP_IMPORTER;ASSIMP_BUILD_NO_HMP_EXPORTER;ASSIMP_BUILD_NO_IRRMESH_IMPORTER;ASSIMP_BUILD_NO_IRRMESH_EXPORTER;ASSIMP_BUILD_NO_IRR_IMPORTER;ASSIMP_BUILD_NO_IRR_EXPORTER;ASSIMP_BUILD_NO_LWS_IMPORTER;ASSIMP_BUILD_NO_LWS_EXPORTER;ASSIMP_BUILD_NO_MD2_IMPORTER;ASSIMP_BUILD_NO_MD2_EXPORTER;ASSIMP_BUILD_NO_MD3_IMPORTER;ASSIMP_BUILD_NO_MD3_EXPORTER;ASSIMP_BUILD_NO_MD5_IMPORTER;ASSIMP_BUILD_NO_MD5_EXPORTER;ASSIMP_BUILD_NO_MDC_IMPORTER;ASSIMP_BUILD_NO_MDC_EXPORTER;ASSIMP_BUILD_NO_MDL_IMPORTER;ASSIMP_BUILD_NO_MDL_EXPORTER;ASSIMP_BUILD_NO_NFF_IMPORTER;ASSIMP_BUILD_NO_NFF_EXPORTER;ASSIMP_BUILD_NO_NDO_IMPORTER;ASSIMP_BUILD_NO_NDO_EXPORTER;ASSIMP_BUILD_NO_OFF_IMPORTER;ASSIMP_BUILD_NO_OFF_EXPORTER;ASSIMP_BUILD_NO_OGRE_IMPORTER;ASSIMP_BUILD_NO_OGRE_EXPORTER;ASSIMP_BUILD_NO_OPENGEX_IMPORTER;ASSIMP_BUILD_NO_OPENGEX_EXPORTER;ASSIMP_BUILD_NO_PLY_IMPORTER;ASSIMP_BUILD_NO_PLY_EXPORTER;ASSIMP_BUILD_NO_MS3D_IMPORTER;ASSIMP_BUILD_NO_MS3D_EXPORTER;ASSIMP_BUILD_NO_COB_IMPORTER;ASSIMP_BUILD_NO_COB_EXPORTER;ASSIMP_BUILD_NO_IFC_IMPORTER;ASSIMP_BUILD_NO_IFC_EXPORTER;ASSIMP_BUILD_NO_XGL_IMPORTER;ASSIMP_BUILD_NO_XGL_EXPORTER;ASSIMP_BUILD_NO_FBX_IMPORTER;ASSIMP_BUILD_NO_FBX_EXPORTER;ASSIMP_BUILD_NO_Q3D_IMPORTER;ASSIMP_BUILD_NO_Q3D_EXPORTER;ASSIMP_BUILD_NO_Q3BSP_IMPORTER;ASSIMP_BUILD_NO_Q3BSP_EXPORTER;ASSIMP_BUILD_NO_RAW_IMPORTER;ASSIMP_BUILD_NO_RAW_EXPORTER;ASSIMP_BUILD_NO_SIB_IMPORTER;ASSIMP_BUILD_NO_SIB_EXPORTER;ASSIMP_BUILD_NO_SMD_IMPORTER;ASSIMP_BUILD_NO_SMD_EXPORTER;ASSIMP_BUILD_NO_STL_IMPORTER;ASSIMP_BUILD_NO_STL_EXPORTER;ASSIMP_BUILD_NO_TERRAGEN_IMPORTER;ASSIMP_BUILD_NO_TERRAGEN_EXPORTER;ASSIMP_BUILD_NO_3D_IMPORTER;ASSIMP_BUILD_NO_3D_EXPORTER;ASSIMP_BUILD_NO_X_IMPORTER;ASSIMP_BUILD_NO_X_EXPORTER;ASSIMP_BUILD_NO_X3D_IMPORTER;ASSIMP_BUILD_NO_X3D_EXPORTER;ASSIMP_BUILD_NO_GLTF_IMPORTER;ASSIMP_BUILD_NO_GLTF_EXPORTER;ASSIMP_BUILD_NO_3MF_IMPORTER;ASSIMP_BUILD_NO_3MF_EXPORTER;ASSIMP_BUILD_NO_MMD_IMPORTER;ASSIMP_BUILD_NO_MMD_EXPORTER;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\.;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\rapidjson\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\unzip;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\contrib\irrXML;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\openddlparser\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;DEBUG;NO_CATCH_EXCEPTIONS;ASSIMP_BUILD_NO_OWN_ZLIB;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_EXPORT;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_NO_AMF_IMPORTER;ASSIMP_BUILD_NO_AMF_EXPORTER;ASSIMP_BUILD_NO_AC_IMPORTER;ASSIMP_BUILD_NO_AC_EXPORTER;ASSIMP_BUILD_NO_ASE_IMPORTER;ASSIMP_BUILD_NO_ASE_EXPORTER;ASSIMP_BUILD_NO_ASSBIN_IMPORTER;ASSIMP_BUILD_NO_ASSBIN_EXPORTER;ASSIMP_BUILD_NO_ASSXML_IMPORTER;ASSIMP_BUILD_NO_ASSXML_EXPORTER;ASSIMP_BUILD_NO_B3D_IMPORTER;ASSIMP_BUILD_NO_B3D_EXPORTER;ASSIMP_BUILD_NO_BVH_IMPORTER;ASSIMP_BUILD_NO_BVH_EXPORTER;ASSIMP_BUILD_NO_DXF_IMPORTER;ASSIMP_BUILD_NO_DXF_EXPORTER;ASSIMP_BUILD_NO_CSM_IMPORTER;ASSIMP_BUILD_NO_CSM_EXPORTER;ASSIMP_BUILD_NO_HMP_IMPORTER;ASSIMP_BUILD_NO_HMP_EXPORTER;ASSIMP_BUILD_NO_IRRMESH_IMPORTER;ASSIMP_BUILD_NO_IRRMESH_EXPORTER;ASSIMP_BUILD_NO_IRR_IMPORTER;ASSIMP_BUILD_NO_IRR_EXPORTER;ASSIMP_BUILD_NO_LWS_IMPORTER;ASSIMP_BUILD_NO_LWS_EXPORTER;ASSIMP_BUILD_NO_MD2_IMPORTER;ASSIMP_BUILD_NO_MD2_EXPORTER;ASSIMP_BUILD_NO_MD3_IMPORTER;ASSIMP_BUILD_NO_MD3_EXPORTER;ASSIMP_BUILD_NO_MD5_IMPORTER;ASSIMP_BUILD_NO_MD5_EXPORTER;ASSIMP_BUILD_NO_MDC_IMPORTER;ASSIMP_BUILD_NO_MDC_EXPORTER;ASSIMP_BUILD_NO_MDL_IMPORTER;ASSIMP_BUILD_NO_MDL_EXPORTER;ASSIMP_BUILD_NO_NFF_IMPORTER;ASSIMP_BUILD_NO_NFF_EXPORTER;ASSIMP_BUILD_NO_NDO_IMPORTER;ASSIMP_BUILD_NO_NDO_EXPORTER;ASSIMP_BUILD_NO_OFF_IMPORTER;ASSIMP_BUILD_NO_OFF_EXPORTER;ASSIMP_BUILD_NO_OGRE_IMPORTER;ASSIMP_BUILD_NO_OGRE_EXPORTER;ASSIMP_BUILD_NO_OPENGEX_IMPORTER;ASSIMP_BUILD_NO_OPENGEX_EXPORTER;ASSIMP_BUILD_NO_PLY_IMPORTER;ASSIMP_BUILD_NO_PLY_EXPORTER;ASSIMP_BUILD_NO_MS3D_IMPORTER;ASSIMP_BUILD_NO_MS3D_EXPORTER;ASSIMP_BUILD_NO_COB_IMPORTER;ASSIMP_BUILD_NO_COB_EXPORTER;ASSIMP_BUILD_NO_IFC_IMPORTER;ASSIMP_BUILD_NO_IFC_EXPORTER;ASSIMP_BUILD_NO_XGL_IMPORTER;ASSIMP_BUILD_NO_XGL_EXPORTER;ASSIMP_BUILD_NO_FBX_IMPORTER;ASSIMP_BUILD_NO_FBX_EXPORTER;ASSIMP_BUILD_NO_Q3D_IMPORTER;ASSIMP_BUILD_NO_Q3D_EXPORTER;ASSIMP_BUILD_NO_Q3BSP_IMPORTER;ASSIMP_BUILD_NO_Q3BSP_EXPORTER;ASSIMP_BUILD_NO_RAW_IMPORTER;ASSIMP_BUILD_NO_RAW_EXPORTER;ASSIMP_BUILD_NO_SIB_IMPORTER;ASSIMP_BUILD_NO_SIB_EXPORTER;ASSIMP_BUILD_NO_SMD_IMPORTER;ASSIMP_BUILD_NO_SMD_EXPORTER;ASSIMP_BUILD_NO_STL_IMPORTER;ASSIMP_BUILD_NO_STL_EXPORTER;ASSIMP_BUILD_NO_TERRAGEN_IMPORTER;ASSIMP_BUILD_NO_TERRAGEN_EXPORTER;ASSIMP_BUILD_NO_3D_IMPORTER;ASSIMP_BUILD_NO_3D_EXPORTER;ASSIMP_BUILD_NO_X_IMPORTER;ASSIMP_BUILD_NO_X_EXPORTER;ASSIMP_BUILD_NO_X3D_IMPORTER;ASSIMP_BUILD_NO_X3D_EXPORTER;ASSIMP_BUILD_NO_GLTF_IMPORTER;ASSIMP_BUILD_NO_GLTF_EXPORTER;ASSIMP_BUILD_NO_3MF_IMPORTER;ASSIMP_BUILD_NO_3MF_EXPORTER;ASSIMP_BUILD_NO_MMD_IMPORTER;ASSIMP_BUILD_NO_MMD_EXPORTER;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="Debug";</PreprocessorDefinitions>
+      <IncludePaths>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\.;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\rapidjson\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\unzip;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\contrib\irrXML;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\openddlparser\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\.;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\rapidjson\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\unzip;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\contrib\irrXML;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\openddlparser\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\.;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\rapidjson\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\unzip;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\contrib\irrXML;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\openddlparser\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4244;4018;4800;4305;4514;4996;4710;4820;4146;4711</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_NO_OWN_ZLIB;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_EXPORT;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_NO_AMF_IMPORTER;ASSIMP_BUILD_NO_AMF_EXPORTER;ASSIMP_BUILD_NO_AC_IMPORTER;ASSIMP_BUILD_NO_AC_EXPORTER;ASSIMP_BUILD_NO_ASE_IMPORTER;ASSIMP_BUILD_NO_ASE_EXPORTER;ASSIMP_BUILD_NO_ASSBIN_IMPORTER;ASSIMP_BUILD_NO_ASSBIN_EXPORTER;ASSIMP_BUILD_NO_ASSXML_IMPORTER;ASSIMP_BUILD_NO_ASSXML_EXPORTER;ASSIMP_BUILD_NO_B3D_IMPORTER;ASSIMP_BUILD_NO_B3D_EXPORTER;ASSIMP_BUILD_NO_BVH_IMPORTER;ASSIMP_BUILD_NO_BVH_EXPORTER;ASSIMP_BUILD_NO_DXF_IMPORTER;ASSIMP_BUILD_NO_DXF_EXPORTER;ASSIMP_BUILD_NO_CSM_IMPORTER;ASSIMP_BUILD_NO_CSM_EXPORTER;ASSIMP_BUILD_NO_HMP_IMPORTER;ASSIMP_BUILD_NO_HMP_EXPORTER;ASSIMP_BUILD_NO_IRRMESH_IMPORTER;ASSIMP_BUILD_NO_IRRMESH_EXPORTER;ASSIMP_BUILD_NO_IRR_IMPORTER;ASSIMP_BUILD_NO_IRR_EXPORTER;ASSIMP_BUILD_NO_LWS_IMPORTER;ASSIMP_BUILD_NO_LWS_EXPORTER;ASSIMP_BUILD_NO_MD2_IMPORTER;ASSIMP_BUILD_NO_MD2_EXPORTER;ASSIMP_BUILD_NO_MD3_IMPORTER;ASSIMP_BUILD_NO_MD3_EXPORTER;ASSIMP_BUILD_NO_MD5_IMPORTER;ASSIMP_BUILD_NO_MD5_EXPORTER;ASSIMP_BUILD_NO_MDC_IMPORTER;ASSIMP_BUILD_NO_MDC_EXPORTER;ASSIMP_BUILD_NO_MDL_IMPORTER;ASSIMP_BUILD_NO_MDL_EXPORTER;ASSIMP_BUILD_NO_NFF_IMPORTER;ASSIMP_BUILD_NO_NFF_EXPORTER;ASSIMP_BUILD_NO_NDO_IMPORTER;ASSIMP_BUILD_NO_NDO_EXPORTER;ASSIMP_BUILD_NO_OFF_IMPORTER;ASSIMP_BUILD_NO_OFF_EXPORTER;ASSIMP_BUILD_NO_OGRE_IMPORTER;ASSIMP_BUILD_NO_OGRE_EXPORTER;ASSIMP_BUILD_NO_OPENGEX_IMPORTER;ASSIMP_BUILD_NO_OPENGEX_EXPORTER;ASSIMP_BUILD_NO_PLY_IMPORTER;ASSIMP_BUILD_NO_PLY_EXPORTER;ASSIMP_BUILD_NO_MS3D_IMPORTER;ASSIMP_BUILD_NO_MS3D_EXPORTER;ASSIMP_BUILD_NO_COB_IMPORTER;ASSIMP_BUILD_NO_COB_EXPORTER;ASSIMP_BUILD_NO_IFC_IMPORTER;ASSIMP_BUILD_NO_IFC_EXPORTER;ASSIMP_BUILD_NO_XGL_IMPORTER;ASSIMP_BUILD_NO_XGL_EXPORTER;ASSIMP_BUILD_NO_FBX_IMPORTER;ASSIMP_BUILD_NO_FBX_EXPORTER;ASSIMP_BUILD_NO_Q3D_IMPORTER;ASSIMP_BUILD_NO_Q3D_EXPORTER;ASSIMP_BUILD_NO_Q3BSP_IMPORTER;ASSIMP_BUILD_NO_Q3BSP_EXPORTER;ASSIMP_BUILD_NO_RAW_IMPORTER;ASSIMP_BUILD_NO_RAW_EXPORTER;ASSIMP_BUILD_NO_SIB_IMPORTER;ASSIMP_BUILD_NO_SIB_EXPORTER;ASSIMP_BUILD_NO_SMD_IMPORTER;ASSIMP_BUILD_NO_SMD_EXPORTER;ASSIMP_BUILD_NO_STL_IMPORTER;ASSIMP_BUILD_NO_STL_EXPORTER;ASSIMP_BUILD_NO_TERRAGEN_IMPORTER;ASSIMP_BUILD_NO_TERRAGEN_EXPORTER;ASSIMP_BUILD_NO_3D_IMPORTER;ASSIMP_BUILD_NO_3D_EXPORTER;ASSIMP_BUILD_NO_X_IMPORTER;ASSIMP_BUILD_NO_X_EXPORTER;ASSIMP_BUILD_NO_X3D_IMPORTER;ASSIMP_BUILD_NO_X3D_EXPORTER;ASSIMP_BUILD_NO_GLTF_IMPORTER;ASSIMP_BUILD_NO_GLTF_EXPORTER;ASSIMP_BUILD_NO_3MF_IMPORTER;ASSIMP_BUILD_NO_3MF_EXPORTER;ASSIMP_BUILD_NO_MMD_IMPORTER;ASSIMP_BUILD_NO_MMD_EXPORTER;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;WINDOWS;_CRT_SECURE_NO_WARNINGS;_WINDOWS;NDEBUG;ASSIMP_BUILD_NO_OWN_ZLIB;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR=\"\";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_EXPORT;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_NO_AMF_IMPORTER;ASSIMP_BUILD_NO_AMF_EXPORTER;ASSIMP_BUILD_NO_AC_IMPORTER;ASSIMP_BUILD_NO_AC_EXPORTER;ASSIMP_BUILD_NO_ASE_IMPORTER;ASSIMP_BUILD_NO_ASE_EXPORTER;ASSIMP_BUILD_NO_ASSBIN_IMPORTER;ASSIMP_BUILD_NO_ASSBIN_EXPORTER;ASSIMP_BUILD_NO_ASSXML_IMPORTER;ASSIMP_BUILD_NO_ASSXML_EXPORTER;ASSIMP_BUILD_NO_B3D_IMPORTER;ASSIMP_BUILD_NO_B3D_EXPORTER;ASSIMP_BUILD_NO_BVH_IMPORTER;ASSIMP_BUILD_NO_BVH_EXPORTER;ASSIMP_BUILD_NO_DXF_IMPORTER;ASSIMP_BUILD_NO_DXF_EXPORTER;ASSIMP_BUILD_NO_CSM_IMPORTER;ASSIMP_BUILD_NO_CSM_EXPORTER;ASSIMP_BUILD_NO_HMP_IMPORTER;ASSIMP_BUILD_NO_HMP_EXPORTER;ASSIMP_BUILD_NO_IRRMESH_IMPORTER;ASSIMP_BUILD_NO_IRRMESH_EXPORTER;ASSIMP_BUILD_NO_IRR_IMPORTER;ASSIMP_BUILD_NO_IRR_EXPORTER;ASSIMP_BUILD_NO_LWS_IMPORTER;ASSIMP_BUILD_NO_LWS_EXPORTER;ASSIMP_BUILD_NO_MD2_IMPORTER;ASSIMP_BUILD_NO_MD2_EXPORTER;ASSIMP_BUILD_NO_MD3_IMPORTER;ASSIMP_BUILD_NO_MD3_EXPORTER;ASSIMP_BUILD_NO_MD5_IMPORTER;ASSIMP_BUILD_NO_MD5_EXPORTER;ASSIMP_BUILD_NO_MDC_IMPORTER;ASSIMP_BUILD_NO_MDC_EXPORTER;ASSIMP_BUILD_NO_MDL_IMPORTER;ASSIMP_BUILD_NO_MDL_EXPORTER;ASSIMP_BUILD_NO_NFF_IMPORTER;ASSIMP_BUILD_NO_NFF_EXPORTER;ASSIMP_BUILD_NO_NDO_IMPORTER;ASSIMP_BUILD_NO_NDO_EXPORTER;ASSIMP_BUILD_NO_OFF_IMPORTER;ASSIMP_BUILD_NO_OFF_EXPORTER;ASSIMP_BUILD_NO_OGRE_IMPORTER;ASSIMP_BUILD_NO_OGRE_EXPORTER;ASSIMP_BUILD_NO_OPENGEX_IMPORTER;ASSIMP_BUILD_NO_OPENGEX_EXPORTER;ASSIMP_BUILD_NO_PLY_IMPORTER;ASSIMP_BUILD_NO_PLY_EXPORTER;ASSIMP_BUILD_NO_MS3D_IMPORTER;ASSIMP_BUILD_NO_MS3D_EXPORTER;ASSIMP_BUILD_NO_COB_IMPORTER;ASSIMP_BUILD_NO_COB_EXPORTER;ASSIMP_BUILD_NO_IFC_IMPORTER;ASSIMP_BUILD_NO_IFC_EXPORTER;ASSIMP_BUILD_NO_XGL_IMPORTER;ASSIMP_BUILD_NO_XGL_EXPORTER;ASSIMP_BUILD_NO_FBX_IMPORTER;ASSIMP_BUILD_NO_FBX_EXPORTER;ASSIMP_BUILD_NO_Q3D_IMPORTER;ASSIMP_BUILD_NO_Q3D_EXPORTER;ASSIMP_BUILD_NO_Q3BSP_IMPORTER;ASSIMP_BUILD_NO_Q3BSP_EXPORTER;ASSIMP_BUILD_NO_RAW_IMPORTER;ASSIMP_BUILD_NO_RAW_EXPORTER;ASSIMP_BUILD_NO_SIB_IMPORTER;ASSIMP_BUILD_NO_SIB_EXPORTER;ASSIMP_BUILD_NO_SMD_IMPORTER;ASSIMP_BUILD_NO_SMD_EXPORTER;ASSIMP_BUILD_NO_STL_IMPORTER;ASSIMP_BUILD_NO_STL_EXPORTER;ASSIMP_BUILD_NO_TERRAGEN_IMPORTER;ASSIMP_BUILD_NO_TERRAGEN_EXPORTER;ASSIMP_BUILD_NO_3D_IMPORTER;ASSIMP_BUILD_NO_3D_EXPORTER;ASSIMP_BUILD_NO_X_IMPORTER;ASSIMP_BUILD_NO_X_EXPORTER;ASSIMP_BUILD_NO_X3D_IMPORTER;ASSIMP_BUILD_NO_X3D_EXPORTER;ASSIMP_BUILD_NO_GLTF_IMPORTER;ASSIMP_BUILD_NO_GLTF_EXPORTER;ASSIMP_BUILD_NO_3MF_IMPORTER;ASSIMP_BUILD_NO_3MF_EXPORTER;ASSIMP_BUILD_NO_MMD_IMPORTER;ASSIMP_BUILD_NO_MMD_EXPORTER;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\.;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\rapidjson\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\unzip;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\contrib\irrXML;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\openddlparser\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_NO_OWN_ZLIB;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_EXPORT;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_NO_AMF_IMPORTER;ASSIMP_BUILD_NO_AMF_EXPORTER;ASSIMP_BUILD_NO_AC_IMPORTER;ASSIMP_BUILD_NO_AC_EXPORTER;ASSIMP_BUILD_NO_ASE_IMPORTER;ASSIMP_BUILD_NO_ASE_EXPORTER;ASSIMP_BUILD_NO_ASSBIN_IMPORTER;ASSIMP_BUILD_NO_ASSBIN_EXPORTER;ASSIMP_BUILD_NO_ASSXML_IMPORTER;ASSIMP_BUILD_NO_ASSXML_EXPORTER;ASSIMP_BUILD_NO_B3D_IMPORTER;ASSIMP_BUILD_NO_B3D_EXPORTER;ASSIMP_BUILD_NO_BVH_IMPORTER;ASSIMP_BUILD_NO_BVH_EXPORTER;ASSIMP_BUILD_NO_DXF_IMPORTER;ASSIMP_BUILD_NO_DXF_EXPORTER;ASSIMP_BUILD_NO_CSM_IMPORTER;ASSIMP_BUILD_NO_CSM_EXPORTER;ASSIMP_BUILD_NO_HMP_IMPORTER;ASSIMP_BUILD_NO_HMP_EXPORTER;ASSIMP_BUILD_NO_IRRMESH_IMPORTER;ASSIMP_BUILD_NO_IRRMESH_EXPORTER;ASSIMP_BUILD_NO_IRR_IMPORTER;ASSIMP_BUILD_NO_IRR_EXPORTER;ASSIMP_BUILD_NO_LWS_IMPORTER;ASSIMP_BUILD_NO_LWS_EXPORTER;ASSIMP_BUILD_NO_MD2_IMPORTER;ASSIMP_BUILD_NO_MD2_EXPORTER;ASSIMP_BUILD_NO_MD3_IMPORTER;ASSIMP_BUILD_NO_MD3_EXPORTER;ASSIMP_BUILD_NO_MD5_IMPORTER;ASSIMP_BUILD_NO_MD5_EXPORTER;ASSIMP_BUILD_NO_MDC_IMPORTER;ASSIMP_BUILD_NO_MDC_EXPORTER;ASSIMP_BUILD_NO_MDL_IMPORTER;ASSIMP_BUILD_NO_MDL_EXPORTER;ASSIMP_BUILD_NO_NFF_IMPORTER;ASSIMP_BUILD_NO_NFF_EXPORTER;ASSIMP_BUILD_NO_NDO_IMPORTER;ASSIMP_BUILD_NO_NDO_EXPORTER;ASSIMP_BUILD_NO_OFF_IMPORTER;ASSIMP_BUILD_NO_OFF_EXPORTER;ASSIMP_BUILD_NO_OGRE_IMPORTER;ASSIMP_BUILD_NO_OGRE_EXPORTER;ASSIMP_BUILD_NO_OPENGEX_IMPORTER;ASSIMP_BUILD_NO_OPENGEX_EXPORTER;ASSIMP_BUILD_NO_PLY_IMPORTER;ASSIMP_BUILD_NO_PLY_EXPORTER;ASSIMP_BUILD_NO_MS3D_IMPORTER;ASSIMP_BUILD_NO_MS3D_EXPORTER;ASSIMP_BUILD_NO_COB_IMPORTER;ASSIMP_BUILD_NO_COB_EXPORTER;ASSIMP_BUILD_NO_IFC_IMPORTER;ASSIMP_BUILD_NO_IFC_EXPORTER;ASSIMP_BUILD_NO_XGL_IMPORTER;ASSIMP_BUILD_NO_XGL_EXPORTER;ASSIMP_BUILD_NO_FBX_IMPORTER;ASSIMP_BUILD_NO_FBX_EXPORTER;ASSIMP_BUILD_NO_Q3D_IMPORTER;ASSIMP_BUILD_NO_Q3D_EXPORTER;ASSIMP_BUILD_NO_Q3BSP_IMPORTER;ASSIMP_BUILD_NO_Q3BSP_EXPORTER;ASSIMP_BUILD_NO_RAW_IMPORTER;ASSIMP_BUILD_NO_RAW_EXPORTER;ASSIMP_BUILD_NO_SIB_IMPORTER;ASSIMP_BUILD_NO_SIB_EXPORTER;ASSIMP_BUILD_NO_SMD_IMPORTER;ASSIMP_BUILD_NO_SMD_EXPORTER;ASSIMP_BUILD_NO_STL_IMPORTER;ASSIMP_BUILD_NO_STL_EXPORTER;ASSIMP_BUILD_NO_TERRAGEN_IMPORTER;ASSIMP_BUILD_NO_TERRAGEN_EXPORTER;ASSIMP_BUILD_NO_3D_IMPORTER;ASSIMP_BUILD_NO_3D_EXPORTER;ASSIMP_BUILD_NO_X_IMPORTER;ASSIMP_BUILD_NO_X_EXPORTER;ASSIMP_BUILD_NO_X3D_IMPORTER;ASSIMP_BUILD_NO_X3D_EXPORTER;ASSIMP_BUILD_NO_GLTF_IMPORTER;ASSIMP_BUILD_NO_GLTF_EXPORTER;ASSIMP_BUILD_NO_3MF_IMPORTER;ASSIMP_BUILD_NO_3MF_EXPORTER;ASSIMP_BUILD_NO_MMD_IMPORTER;ASSIMP_BUILD_NO_MMD_EXPORTER;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="Release";</PreprocessorDefinitions>
+      <IncludePaths>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\.;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\rapidjson\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\unzip;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\contrib\irrXML;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\openddlparser\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\.;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\rapidjson\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\unzip;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\contrib\irrXML;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\openddlparser\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\.;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\rapidjson\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\unzip;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\contrib\irrXML;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\openddlparser\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4244;4018;4800;4305;4514;4996;4710;4820</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_NO_OWN_ZLIB;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_EXPORT;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_NO_AMF_IMPORTER;ASSIMP_BUILD_NO_AMF_EXPORTER;ASSIMP_BUILD_NO_AC_IMPORTER;ASSIMP_BUILD_NO_AC_EXPORTER;ASSIMP_BUILD_NO_ASE_IMPORTER;ASSIMP_BUILD_NO_ASE_EXPORTER;ASSIMP_BUILD_NO_ASSBIN_IMPORTER;ASSIMP_BUILD_NO_ASSBIN_EXPORTER;ASSIMP_BUILD_NO_ASSXML_IMPORTER;ASSIMP_BUILD_NO_ASSXML_EXPORTER;ASSIMP_BUILD_NO_B3D_IMPORTER;ASSIMP_BUILD_NO_B3D_EXPORTER;ASSIMP_BUILD_NO_BVH_IMPORTER;ASSIMP_BUILD_NO_BVH_EXPORTER;ASSIMP_BUILD_NO_DXF_IMPORTER;ASSIMP_BUILD_NO_DXF_EXPORTER;ASSIMP_BUILD_NO_CSM_IMPORTER;ASSIMP_BUILD_NO_CSM_EXPORTER;ASSIMP_BUILD_NO_HMP_IMPORTER;ASSIMP_BUILD_NO_HMP_EXPORTER;ASSIMP_BUILD_NO_IRRMESH_IMPORTER;ASSIMP_BUILD_NO_IRRMESH_EXPORTER;ASSIMP_BUILD_NO_IRR_IMPORTER;ASSIMP_BUILD_NO_IRR_EXPORTER;ASSIMP_BUILD_NO_LWS_IMPORTER;ASSIMP_BUILD_NO_LWS_EXPORTER;ASSIMP_BUILD_NO_MD2_IMPORTER;ASSIMP_BUILD_NO_MD2_EXPORTER;ASSIMP_BUILD_NO_MD3_IMPORTER;ASSIMP_BUILD_NO_MD3_EXPORTER;ASSIMP_BUILD_NO_MD5_IMPORTER;ASSIMP_BUILD_NO_MD5_EXPORTER;ASSIMP_BUILD_NO_MDC_IMPORTER;ASSIMP_BUILD_NO_MDC_EXPORTER;ASSIMP_BUILD_NO_MDL_IMPORTER;ASSIMP_BUILD_NO_MDL_EXPORTER;ASSIMP_BUILD_NO_NFF_IMPORTER;ASSIMP_BUILD_NO_NFF_EXPORTER;ASSIMP_BUILD_NO_NDO_IMPORTER;ASSIMP_BUILD_NO_NDO_EXPORTER;ASSIMP_BUILD_NO_OFF_IMPORTER;ASSIMP_BUILD_NO_OFF_EXPORTER;ASSIMP_BUILD_NO_OGRE_IMPORTER;ASSIMP_BUILD_NO_OGRE_EXPORTER;ASSIMP_BUILD_NO_OPENGEX_IMPORTER;ASSIMP_BUILD_NO_OPENGEX_EXPORTER;ASSIMP_BUILD_NO_PLY_IMPORTER;ASSIMP_BUILD_NO_PLY_EXPORTER;ASSIMP_BUILD_NO_MS3D_IMPORTER;ASSIMP_BUILD_NO_MS3D_EXPORTER;ASSIMP_BUILD_NO_COB_IMPORTER;ASSIMP_BUILD_NO_COB_EXPORTER;ASSIMP_BUILD_NO_IFC_IMPORTER;ASSIMP_BUILD_NO_IFC_EXPORTER;ASSIMP_BUILD_NO_XGL_IMPORTER;ASSIMP_BUILD_NO_XGL_EXPORTER;ASSIMP_BUILD_NO_FBX_IMPORTER;ASSIMP_BUILD_NO_FBX_EXPORTER;ASSIMP_BUILD_NO_Q3D_IMPORTER;ASSIMP_BUILD_NO_Q3D_EXPORTER;ASSIMP_BUILD_NO_Q3BSP_IMPORTER;ASSIMP_BUILD_NO_Q3BSP_EXPORTER;ASSIMP_BUILD_NO_RAW_IMPORTER;ASSIMP_BUILD_NO_RAW_EXPORTER;ASSIMP_BUILD_NO_SIB_IMPORTER;ASSIMP_BUILD_NO_SIB_EXPORTER;ASSIMP_BUILD_NO_SMD_IMPORTER;ASSIMP_BUILD_NO_SMD_EXPORTER;ASSIMP_BUILD_NO_STL_IMPORTER;ASSIMP_BUILD_NO_STL_EXPORTER;ASSIMP_BUILD_NO_TERRAGEN_IMPORTER;ASSIMP_BUILD_NO_TERRAGEN_EXPORTER;ASSIMP_BUILD_NO_3D_IMPORTER;ASSIMP_BUILD_NO_3D_EXPORTER;ASSIMP_BUILD_NO_X_IMPORTER;ASSIMP_BUILD_NO_X_EXPORTER;ASSIMP_BUILD_NO_X3D_IMPORTER;ASSIMP_BUILD_NO_X3D_EXPORTER;ASSIMP_BUILD_NO_GLTF_IMPORTER;ASSIMP_BUILD_NO_GLTF_EXPORTER;ASSIMP_BUILD_NO_3MF_IMPORTER;ASSIMP_BUILD_NO_3MF_EXPORTER;ASSIMP_BUILD_NO_MMD_IMPORTER;ASSIMP_BUILD_NO_MMD_EXPORTER;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;WINDOWS;_CRT_SECURE_NO_WARNINGS;_WINDOWS;NDEBUG;ASSIMP_BUILD_NO_OWN_ZLIB;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR=\"\";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_EXPORT;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_NO_AMF_IMPORTER;ASSIMP_BUILD_NO_AMF_EXPORTER;ASSIMP_BUILD_NO_AC_IMPORTER;ASSIMP_BUILD_NO_AC_EXPORTER;ASSIMP_BUILD_NO_ASE_IMPORTER;ASSIMP_BUILD_NO_ASE_EXPORTER;ASSIMP_BUILD_NO_ASSBIN_IMPORTER;ASSIMP_BUILD_NO_ASSBIN_EXPORTER;ASSIMP_BUILD_NO_ASSXML_IMPORTER;ASSIMP_BUILD_NO_ASSXML_EXPORTER;ASSIMP_BUILD_NO_B3D_IMPORTER;ASSIMP_BUILD_NO_B3D_EXPORTER;ASSIMP_BUILD_NO_BVH_IMPORTER;ASSIMP_BUILD_NO_BVH_EXPORTER;ASSIMP_BUILD_NO_DXF_IMPORTER;ASSIMP_BUILD_NO_DXF_EXPORTER;ASSIMP_BUILD_NO_CSM_IMPORTER;ASSIMP_BUILD_NO_CSM_EXPORTER;ASSIMP_BUILD_NO_HMP_IMPORTER;ASSIMP_BUILD_NO_HMP_EXPORTER;ASSIMP_BUILD_NO_IRRMESH_IMPORTER;ASSIMP_BUILD_NO_IRRMESH_EXPORTER;ASSIMP_BUILD_NO_IRR_IMPORTER;ASSIMP_BUILD_NO_IRR_EXPORTER;ASSIMP_BUILD_NO_LWS_IMPORTER;ASSIMP_BUILD_NO_LWS_EXPORTER;ASSIMP_BUILD_NO_MD2_IMPORTER;ASSIMP_BUILD_NO_MD2_EXPORTER;ASSIMP_BUILD_NO_MD3_IMPORTER;ASSIMP_BUILD_NO_MD3_EXPORTER;ASSIMP_BUILD_NO_MD5_IMPORTER;ASSIMP_BUILD_NO_MD5_EXPORTER;ASSIMP_BUILD_NO_MDC_IMPORTER;ASSIMP_BUILD_NO_MDC_EXPORTER;ASSIMP_BUILD_NO_MDL_IMPORTER;ASSIMP_BUILD_NO_MDL_EXPORTER;ASSIMP_BUILD_NO_NFF_IMPORTER;ASSIMP_BUILD_NO_NFF_EXPORTER;ASSIMP_BUILD_NO_NDO_IMPORTER;ASSIMP_BUILD_NO_NDO_EXPORTER;ASSIMP_BUILD_NO_OFF_IMPORTER;ASSIMP_BUILD_NO_OFF_EXPORTER;ASSIMP_BUILD_NO_OGRE_IMPORTER;ASSIMP_BUILD_NO_OGRE_EXPORTER;ASSIMP_BUILD_NO_OPENGEX_IMPORTER;ASSIMP_BUILD_NO_OPENGEX_EXPORTER;ASSIMP_BUILD_NO_PLY_IMPORTER;ASSIMP_BUILD_NO_PLY_EXPORTER;ASSIMP_BUILD_NO_MS3D_IMPORTER;ASSIMP_BUILD_NO_MS3D_EXPORTER;ASSIMP_BUILD_NO_COB_IMPORTER;ASSIMP_BUILD_NO_COB_EXPORTER;ASSIMP_BUILD_NO_IFC_IMPORTER;ASSIMP_BUILD_NO_IFC_EXPORTER;ASSIMP_BUILD_NO_XGL_IMPORTER;ASSIMP_BUILD_NO_XGL_EXPORTER;ASSIMP_BUILD_NO_FBX_IMPORTER;ASSIMP_BUILD_NO_FBX_EXPORTER;ASSIMP_BUILD_NO_Q3D_IMPORTER;ASSIMP_BUILD_NO_Q3D_EXPORTER;ASSIMP_BUILD_NO_Q3BSP_IMPORTER;ASSIMP_BUILD_NO_Q3BSP_EXPORTER;ASSIMP_BUILD_NO_RAW_IMPORTER;ASSIMP_BUILD_NO_RAW_EXPORTER;ASSIMP_BUILD_NO_SIB_IMPORTER;ASSIMP_BUILD_NO_SIB_EXPORTER;ASSIMP_BUILD_NO_SMD_IMPORTER;ASSIMP_BUILD_NO_SMD_EXPORTER;ASSIMP_BUILD_NO_STL_IMPORTER;ASSIMP_BUILD_NO_STL_EXPORTER;ASSIMP_BUILD_NO_TERRAGEN_IMPORTER;ASSIMP_BUILD_NO_TERRAGEN_EXPORTER;ASSIMP_BUILD_NO_3D_IMPORTER;ASSIMP_BUILD_NO_3D_EXPORTER;ASSIMP_BUILD_NO_X_IMPORTER;ASSIMP_BUILD_NO_X_EXPORTER;ASSIMP_BUILD_NO_X3D_IMPORTER;ASSIMP_BUILD_NO_X3D_EXPORTER;ASSIMP_BUILD_NO_GLTF_IMPORTER;ASSIMP_BUILD_NO_GLTF_EXPORTER;ASSIMP_BUILD_NO_3MF_IMPORTER;ASSIMP_BUILD_NO_3MF_EXPORTER;ASSIMP_BUILD_NO_MMD_IMPORTER;ASSIMP_BUILD_NO_MMD_EXPORTER;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\.;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\rapidjson\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\unzip;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\contrib\irrXML;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\openddlparser\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_NO_OWN_ZLIB;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_EXPORT;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_NO_AMF_IMPORTER;ASSIMP_BUILD_NO_AMF_EXPORTER;ASSIMP_BUILD_NO_AC_IMPORTER;ASSIMP_BUILD_NO_AC_EXPORTER;ASSIMP_BUILD_NO_ASE_IMPORTER;ASSIMP_BUILD_NO_ASE_EXPORTER;ASSIMP_BUILD_NO_ASSBIN_IMPORTER;ASSIMP_BUILD_NO_ASSBIN_EXPORTER;ASSIMP_BUILD_NO_ASSXML_IMPORTER;ASSIMP_BUILD_NO_ASSXML_EXPORTER;ASSIMP_BUILD_NO_B3D_IMPORTER;ASSIMP_BUILD_NO_B3D_EXPORTER;ASSIMP_BUILD_NO_BVH_IMPORTER;ASSIMP_BUILD_NO_BVH_EXPORTER;ASSIMP_BUILD_NO_DXF_IMPORTER;ASSIMP_BUILD_NO_DXF_EXPORTER;ASSIMP_BUILD_NO_CSM_IMPORTER;ASSIMP_BUILD_NO_CSM_EXPORTER;ASSIMP_BUILD_NO_HMP_IMPORTER;ASSIMP_BUILD_NO_HMP_EXPORTER;ASSIMP_BUILD_NO_IRRMESH_IMPORTER;ASSIMP_BUILD_NO_IRRMESH_EXPORTER;ASSIMP_BUILD_NO_IRR_IMPORTER;ASSIMP_BUILD_NO_IRR_EXPORTER;ASSIMP_BUILD_NO_LWS_IMPORTER;ASSIMP_BUILD_NO_LWS_EXPORTER;ASSIMP_BUILD_NO_MD2_IMPORTER;ASSIMP_BUILD_NO_MD2_EXPORTER;ASSIMP_BUILD_NO_MD3_IMPORTER;ASSIMP_BUILD_NO_MD3_EXPORTER;ASSIMP_BUILD_NO_MD5_IMPORTER;ASSIMP_BUILD_NO_MD5_EXPORTER;ASSIMP_BUILD_NO_MDC_IMPORTER;ASSIMP_BUILD_NO_MDC_EXPORTER;ASSIMP_BUILD_NO_MDL_IMPORTER;ASSIMP_BUILD_NO_MDL_EXPORTER;ASSIMP_BUILD_NO_NFF_IMPORTER;ASSIMP_BUILD_NO_NFF_EXPORTER;ASSIMP_BUILD_NO_NDO_IMPORTER;ASSIMP_BUILD_NO_NDO_EXPORTER;ASSIMP_BUILD_NO_OFF_IMPORTER;ASSIMP_BUILD_NO_OFF_EXPORTER;ASSIMP_BUILD_NO_OGRE_IMPORTER;ASSIMP_BUILD_NO_OGRE_EXPORTER;ASSIMP_BUILD_NO_OPENGEX_IMPORTER;ASSIMP_BUILD_NO_OPENGEX_EXPORTER;ASSIMP_BUILD_NO_PLY_IMPORTER;ASSIMP_BUILD_NO_PLY_EXPORTER;ASSIMP_BUILD_NO_MS3D_IMPORTER;ASSIMP_BUILD_NO_MS3D_EXPORTER;ASSIMP_BUILD_NO_COB_IMPORTER;ASSIMP_BUILD_NO_COB_EXPORTER;ASSIMP_BUILD_NO_IFC_IMPORTER;ASSIMP_BUILD_NO_IFC_EXPORTER;ASSIMP_BUILD_NO_XGL_IMPORTER;ASSIMP_BUILD_NO_XGL_EXPORTER;ASSIMP_BUILD_NO_FBX_IMPORTER;ASSIMP_BUILD_NO_FBX_EXPORTER;ASSIMP_BUILD_NO_Q3D_IMPORTER;ASSIMP_BUILD_NO_Q3D_EXPORTER;ASSIMP_BUILD_NO_Q3BSP_IMPORTER;ASSIMP_BUILD_NO_Q3BSP_EXPORTER;ASSIMP_BUILD_NO_RAW_IMPORTER;ASSIMP_BUILD_NO_RAW_EXPORTER;ASSIMP_BUILD_NO_SIB_IMPORTER;ASSIMP_BUILD_NO_SIB_EXPORTER;ASSIMP_BUILD_NO_SMD_IMPORTER;ASSIMP_BUILD_NO_SMD_EXPORTER;ASSIMP_BUILD_NO_STL_IMPORTER;ASSIMP_BUILD_NO_STL_EXPORTER;ASSIMP_BUILD_NO_TERRAGEN_IMPORTER;ASSIMP_BUILD_NO_TERRAGEN_EXPORTER;ASSIMP_BUILD_NO_3D_IMPORTER;ASSIMP_BUILD_NO_3D_EXPORTER;ASSIMP_BUILD_NO_X_IMPORTER;ASSIMP_BUILD_NO_X_EXPORTER;ASSIMP_BUILD_NO_X3D_IMPORTER;ASSIMP_BUILD_NO_X3D_EXPORTER;ASSIMP_BUILD_NO_GLTF_IMPORTER;ASSIMP_BUILD_NO_GLTF_EXPORTER;ASSIMP_BUILD_NO_3MF_IMPORTER;ASSIMP_BUILD_NO_3MF_EXPORTER;ASSIMP_BUILD_NO_MMD_IMPORTER;ASSIMP_BUILD_NO_MMD_EXPORTER;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="MinSizeRel";</PreprocessorDefinitions>
+      <IncludePaths>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\.;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\rapidjson\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\unzip;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\contrib\irrXML;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\openddlparser\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\.;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\rapidjson\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\unzip;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\contrib\irrXML;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\openddlparser\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\.;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\rapidjson\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\unzip;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\contrib\irrXML;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\openddlparser\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4018;4800;4305;4514;4996;4710;4820;4146;4711</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_NO_OWN_ZLIB;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_EXPORT;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_NO_AMF_IMPORTER;ASSIMP_BUILD_NO_AMF_EXPORTER;ASSIMP_BUILD_NO_AC_IMPORTER;ASSIMP_BUILD_NO_AC_EXPORTER;ASSIMP_BUILD_NO_ASE_IMPORTER;ASSIMP_BUILD_NO_ASE_EXPORTER;ASSIMP_BUILD_NO_ASSBIN_IMPORTER;ASSIMP_BUILD_NO_ASSBIN_EXPORTER;ASSIMP_BUILD_NO_ASSXML_IMPORTER;ASSIMP_BUILD_NO_ASSXML_EXPORTER;ASSIMP_BUILD_NO_B3D_IMPORTER;ASSIMP_BUILD_NO_B3D_EXPORTER;ASSIMP_BUILD_NO_BVH_IMPORTER;ASSIMP_BUILD_NO_BVH_EXPORTER;ASSIMP_BUILD_NO_DXF_IMPORTER;ASSIMP_BUILD_NO_DXF_EXPORTER;ASSIMP_BUILD_NO_CSM_IMPORTER;ASSIMP_BUILD_NO_CSM_EXPORTER;ASSIMP_BUILD_NO_HMP_IMPORTER;ASSIMP_BUILD_NO_HMP_EXPORTER;ASSIMP_BUILD_NO_IRRMESH_IMPORTER;ASSIMP_BUILD_NO_IRRMESH_EXPORTER;ASSIMP_BUILD_NO_IRR_IMPORTER;ASSIMP_BUILD_NO_IRR_EXPORTER;ASSIMP_BUILD_NO_LWS_IMPORTER;ASSIMP_BUILD_NO_LWS_EXPORTER;ASSIMP_BUILD_NO_MD2_IMPORTER;ASSIMP_BUILD_NO_MD2_EXPORTER;ASSIMP_BUILD_NO_MD3_IMPORTER;ASSIMP_BUILD_NO_MD3_EXPORTER;ASSIMP_BUILD_NO_MD5_IMPORTER;ASSIMP_BUILD_NO_MD5_EXPORTER;ASSIMP_BUILD_NO_MDC_IMPORTER;ASSIMP_BUILD_NO_MDC_EXPORTER;ASSIMP_BUILD_NO_MDL_IMPORTER;ASSIMP_BUILD_NO_MDL_EXPORTER;ASSIMP_BUILD_NO_NFF_IMPORTER;ASSIMP_BUILD_NO_NFF_EXPORTER;ASSIMP_BUILD_NO_NDO_IMPORTER;ASSIMP_BUILD_NO_NDO_EXPORTER;ASSIMP_BUILD_NO_OFF_IMPORTER;ASSIMP_BUILD_NO_OFF_EXPORTER;ASSIMP_BUILD_NO_OGRE_IMPORTER;ASSIMP_BUILD_NO_OGRE_EXPORTER;ASSIMP_BUILD_NO_OPENGEX_IMPORTER;ASSIMP_BUILD_NO_OPENGEX_EXPORTER;ASSIMP_BUILD_NO_PLY_IMPORTER;ASSIMP_BUILD_NO_PLY_EXPORTER;ASSIMP_BUILD_NO_MS3D_IMPORTER;ASSIMP_BUILD_NO_MS3D_EXPORTER;ASSIMP_BUILD_NO_COB_IMPORTER;ASSIMP_BUILD_NO_COB_EXPORTER;ASSIMP_BUILD_NO_IFC_IMPORTER;ASSIMP_BUILD_NO_IFC_EXPORTER;ASSIMP_BUILD_NO_XGL_IMPORTER;ASSIMP_BUILD_NO_XGL_EXPORTER;ASSIMP_BUILD_NO_FBX_IMPORTER;ASSIMP_BUILD_NO_FBX_EXPORTER;ASSIMP_BUILD_NO_Q3D_IMPORTER;ASSIMP_BUILD_NO_Q3D_EXPORTER;ASSIMP_BUILD_NO_Q3BSP_IMPORTER;ASSIMP_BUILD_NO_Q3BSP_EXPORTER;ASSIMP_BUILD_NO_RAW_IMPORTER;ASSIMP_BUILD_NO_RAW_EXPORTER;ASSIMP_BUILD_NO_SIB_IMPORTER;ASSIMP_BUILD_NO_SIB_EXPORTER;ASSIMP_BUILD_NO_SMD_IMPORTER;ASSIMP_BUILD_NO_SMD_EXPORTER;ASSIMP_BUILD_NO_STL_IMPORTER;ASSIMP_BUILD_NO_STL_EXPORTER;ASSIMP_BUILD_NO_TERRAGEN_IMPORTER;ASSIMP_BUILD_NO_TERRAGEN_EXPORTER;ASSIMP_BUILD_NO_3D_IMPORTER;ASSIMP_BUILD_NO_3D_EXPORTER;ASSIMP_BUILD_NO_X_IMPORTER;ASSIMP_BUILD_NO_X_EXPORTER;ASSIMP_BUILD_NO_X3D_IMPORTER;ASSIMP_BUILD_NO_X3D_EXPORTER;ASSIMP_BUILD_NO_GLTF_IMPORTER;ASSIMP_BUILD_NO_GLTF_EXPORTER;ASSIMP_BUILD_NO_3MF_IMPORTER;ASSIMP_BUILD_NO_3MF_EXPORTER;ASSIMP_BUILD_NO_MMD_IMPORTER;ASSIMP_BUILD_NO_MMD_EXPORTER;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;WINDOWS;_CRT_SECURE_NO_WARNINGS;_WINDOWS;NDEBUG;ASSIMP_BUILD_NO_OWN_ZLIB;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR=\"\";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_EXPORT;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_NO_AMF_IMPORTER;ASSIMP_BUILD_NO_AMF_EXPORTER;ASSIMP_BUILD_NO_AC_IMPORTER;ASSIMP_BUILD_NO_AC_EXPORTER;ASSIMP_BUILD_NO_ASE_IMPORTER;ASSIMP_BUILD_NO_ASE_EXPORTER;ASSIMP_BUILD_NO_ASSBIN_IMPORTER;ASSIMP_BUILD_NO_ASSBIN_EXPORTER;ASSIMP_BUILD_NO_ASSXML_IMPORTER;ASSIMP_BUILD_NO_ASSXML_EXPORTER;ASSIMP_BUILD_NO_B3D_IMPORTER;ASSIMP_BUILD_NO_B3D_EXPORTER;ASSIMP_BUILD_NO_BVH_IMPORTER;ASSIMP_BUILD_NO_BVH_EXPORTER;ASSIMP_BUILD_NO_DXF_IMPORTER;ASSIMP_BUILD_NO_DXF_EXPORTER;ASSIMP_BUILD_NO_CSM_IMPORTER;ASSIMP_BUILD_NO_CSM_EXPORTER;ASSIMP_BUILD_NO_HMP_IMPORTER;ASSIMP_BUILD_NO_HMP_EXPORTER;ASSIMP_BUILD_NO_IRRMESH_IMPORTER;ASSIMP_BUILD_NO_IRRMESH_EXPORTER;ASSIMP_BUILD_NO_IRR_IMPORTER;ASSIMP_BUILD_NO_IRR_EXPORTER;ASSIMP_BUILD_NO_LWS_IMPORTER;ASSIMP_BUILD_NO_LWS_EXPORTER;ASSIMP_BUILD_NO_MD2_IMPORTER;ASSIMP_BUILD_NO_MD2_EXPORTER;ASSIMP_BUILD_NO_MD3_IMPORTER;ASSIMP_BUILD_NO_MD3_EXPORTER;ASSIMP_BUILD_NO_MD5_IMPORTER;ASSIMP_BUILD_NO_MD5_EXPORTER;ASSIMP_BUILD_NO_MDC_IMPORTER;ASSIMP_BUILD_NO_MDC_EXPORTER;ASSIMP_BUILD_NO_MDL_IMPORTER;ASSIMP_BUILD_NO_MDL_EXPORTER;ASSIMP_BUILD_NO_NFF_IMPORTER;ASSIMP_BUILD_NO_NFF_EXPORTER;ASSIMP_BUILD_NO_NDO_IMPORTER;ASSIMP_BUILD_NO_NDO_EXPORTER;ASSIMP_BUILD_NO_OFF_IMPORTER;ASSIMP_BUILD_NO_OFF_EXPORTER;ASSIMP_BUILD_NO_OGRE_IMPORTER;ASSIMP_BUILD_NO_OGRE_EXPORTER;ASSIMP_BUILD_NO_OPENGEX_IMPORTER;ASSIMP_BUILD_NO_OPENGEX_EXPORTER;ASSIMP_BUILD_NO_PLY_IMPORTER;ASSIMP_BUILD_NO_PLY_EXPORTER;ASSIMP_BUILD_NO_MS3D_IMPORTER;ASSIMP_BUILD_NO_MS3D_EXPORTER;ASSIMP_BUILD_NO_COB_IMPORTER;ASSIMP_BUILD_NO_COB_EXPORTER;ASSIMP_BUILD_NO_IFC_IMPORTER;ASSIMP_BUILD_NO_IFC_EXPORTER;ASSIMP_BUILD_NO_XGL_IMPORTER;ASSIMP_BUILD_NO_XGL_EXPORTER;ASSIMP_BUILD_NO_FBX_IMPORTER;ASSIMP_BUILD_NO_FBX_EXPORTER;ASSIMP_BUILD_NO_Q3D_IMPORTER;ASSIMP_BUILD_NO_Q3D_EXPORTER;ASSIMP_BUILD_NO_Q3BSP_IMPORTER;ASSIMP_BUILD_NO_Q3BSP_EXPORTER;ASSIMP_BUILD_NO_RAW_IMPORTER;ASSIMP_BUILD_NO_RAW_EXPORTER;ASSIMP_BUILD_NO_SIB_IMPORTER;ASSIMP_BUILD_NO_SIB_EXPORTER;ASSIMP_BUILD_NO_SMD_IMPORTER;ASSIMP_BUILD_NO_SMD_EXPORTER;ASSIMP_BUILD_NO_STL_IMPORTER;ASSIMP_BUILD_NO_STL_EXPORTER;ASSIMP_BUILD_NO_TERRAGEN_IMPORTER;ASSIMP_BUILD_NO_TERRAGEN_EXPORTER;ASSIMP_BUILD_NO_3D_IMPORTER;ASSIMP_BUILD_NO_3D_EXPORTER;ASSIMP_BUILD_NO_X_IMPORTER;ASSIMP_BUILD_NO_X_EXPORTER;ASSIMP_BUILD_NO_X3D_IMPORTER;ASSIMP_BUILD_NO_X3D_EXPORTER;ASSIMP_BUILD_NO_GLTF_IMPORTER;ASSIMP_BUILD_NO_GLTF_EXPORTER;ASSIMP_BUILD_NO_3MF_IMPORTER;ASSIMP_BUILD_NO_3MF_EXPORTER;ASSIMP_BUILD_NO_MMD_IMPORTER;ASSIMP_BUILD_NO_MMD_EXPORTER;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\.;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\rapidjson\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\unzip;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\contrib\irrXML;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\openddlparser\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WINDOWS;_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_NO_OWN_ZLIB;FMT_HEADER_ONLY;_WIN32_WINNT=0x0601;__USE_MINGW_ANSI_STDIO=1;_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN;SPRING_DATADIR="";SYNCCHECK;AVI_CAPTURING;USE_LIBSQUISH;_GLIBCXX_USE_NANOSLEEP;THREADPOOL;STREFLOP_SSE;ASIO_STANDALONE;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_EXPORT;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_NO_AMF_IMPORTER;ASSIMP_BUILD_NO_AMF_EXPORTER;ASSIMP_BUILD_NO_AC_IMPORTER;ASSIMP_BUILD_NO_AC_EXPORTER;ASSIMP_BUILD_NO_ASE_IMPORTER;ASSIMP_BUILD_NO_ASE_EXPORTER;ASSIMP_BUILD_NO_ASSBIN_IMPORTER;ASSIMP_BUILD_NO_ASSBIN_EXPORTER;ASSIMP_BUILD_NO_ASSXML_IMPORTER;ASSIMP_BUILD_NO_ASSXML_EXPORTER;ASSIMP_BUILD_NO_B3D_IMPORTER;ASSIMP_BUILD_NO_B3D_EXPORTER;ASSIMP_BUILD_NO_BVH_IMPORTER;ASSIMP_BUILD_NO_BVH_EXPORTER;ASSIMP_BUILD_NO_DXF_IMPORTER;ASSIMP_BUILD_NO_DXF_EXPORTER;ASSIMP_BUILD_NO_CSM_IMPORTER;ASSIMP_BUILD_NO_CSM_EXPORTER;ASSIMP_BUILD_NO_HMP_IMPORTER;ASSIMP_BUILD_NO_HMP_EXPORTER;ASSIMP_BUILD_NO_IRRMESH_IMPORTER;ASSIMP_BUILD_NO_IRRMESH_EXPORTER;ASSIMP_BUILD_NO_IRR_IMPORTER;ASSIMP_BUILD_NO_IRR_EXPORTER;ASSIMP_BUILD_NO_LWS_IMPORTER;ASSIMP_BUILD_NO_LWS_EXPORTER;ASSIMP_BUILD_NO_MD2_IMPORTER;ASSIMP_BUILD_NO_MD2_EXPORTER;ASSIMP_BUILD_NO_MD3_IMPORTER;ASSIMP_BUILD_NO_MD3_EXPORTER;ASSIMP_BUILD_NO_MD5_IMPORTER;ASSIMP_BUILD_NO_MD5_EXPORTER;ASSIMP_BUILD_NO_MDC_IMPORTER;ASSIMP_BUILD_NO_MDC_EXPORTER;ASSIMP_BUILD_NO_MDL_IMPORTER;ASSIMP_BUILD_NO_MDL_EXPORTER;ASSIMP_BUILD_NO_NFF_IMPORTER;ASSIMP_BUILD_NO_NFF_EXPORTER;ASSIMP_BUILD_NO_NDO_IMPORTER;ASSIMP_BUILD_NO_NDO_EXPORTER;ASSIMP_BUILD_NO_OFF_IMPORTER;ASSIMP_BUILD_NO_OFF_EXPORTER;ASSIMP_BUILD_NO_OGRE_IMPORTER;ASSIMP_BUILD_NO_OGRE_EXPORTER;ASSIMP_BUILD_NO_OPENGEX_IMPORTER;ASSIMP_BUILD_NO_OPENGEX_EXPORTER;ASSIMP_BUILD_NO_PLY_IMPORTER;ASSIMP_BUILD_NO_PLY_EXPORTER;ASSIMP_BUILD_NO_MS3D_IMPORTER;ASSIMP_BUILD_NO_MS3D_EXPORTER;ASSIMP_BUILD_NO_COB_IMPORTER;ASSIMP_BUILD_NO_COB_EXPORTER;ASSIMP_BUILD_NO_IFC_IMPORTER;ASSIMP_BUILD_NO_IFC_EXPORTER;ASSIMP_BUILD_NO_XGL_IMPORTER;ASSIMP_BUILD_NO_XGL_EXPORTER;ASSIMP_BUILD_NO_FBX_IMPORTER;ASSIMP_BUILD_NO_FBX_EXPORTER;ASSIMP_BUILD_NO_Q3D_IMPORTER;ASSIMP_BUILD_NO_Q3D_EXPORTER;ASSIMP_BUILD_NO_Q3BSP_IMPORTER;ASSIMP_BUILD_NO_Q3BSP_EXPORTER;ASSIMP_BUILD_NO_RAW_IMPORTER;ASSIMP_BUILD_NO_RAW_EXPORTER;ASSIMP_BUILD_NO_SIB_IMPORTER;ASSIMP_BUILD_NO_SIB_EXPORTER;ASSIMP_BUILD_NO_SMD_IMPORTER;ASSIMP_BUILD_NO_SMD_EXPORTER;ASSIMP_BUILD_NO_STL_IMPORTER;ASSIMP_BUILD_NO_STL_EXPORTER;ASSIMP_BUILD_NO_TERRAGEN_IMPORTER;ASSIMP_BUILD_NO_TERRAGEN_EXPORTER;ASSIMP_BUILD_NO_3D_IMPORTER;ASSIMP_BUILD_NO_3D_EXPORTER;ASSIMP_BUILD_NO_X_IMPORTER;ASSIMP_BUILD_NO_X_EXPORTER;ASSIMP_BUILD_NO_X3D_IMPORTER;ASSIMP_BUILD_NO_X3D_EXPORTER;ASSIMP_BUILD_NO_GLTF_IMPORTER;ASSIMP_BUILD_NO_GLTF_EXPORTER;ASSIMP_BUILD_NO_3MF_IMPORTER;ASSIMP_BUILD_NO_3MF_EXPORTER;ASSIMP_BUILD_NO_MMD_IMPORTER;ASSIMP_BUILD_NO_MMD_EXPORTER;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="RelWithDebInfo";</PreprocessorDefinitions>
+      <IncludePaths>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\.;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\rapidjson\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\unzip;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\contrib\irrXML;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\openddlparser\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\vclibs64\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\.;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\rapidjson\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\unzip;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\contrib\irrXML;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..\contrib\openddlparser\include;T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/rts/lib/assimp/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -ST:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring -BT:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine --check-stamp-file T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/rts/lib/assimp/code/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/rts/lib/assimp/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -ST:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring -BT:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine --check-stamp-file T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/rts/lib/assimp/code/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/rts/lib/assimp/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -ST:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring -BT:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine --check-stamp-file T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/rts/lib/assimp/code/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/rts/lib/assimp/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -ST:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring -BT:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine --check-stamp-file T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/rts/lib/assimp/code/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\Assimp.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\fast_atof.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\qnan.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\BaseImporter.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\BaseImporter.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\BaseProcess.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\BaseProcess.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\Importer.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ScenePrivate.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\PostStepRegistry.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ImporterRegistry.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ByteSwapper.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\DefaultProgressHandler.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\DefaultIOStream.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\DefaultIOSystem.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\CInterfaceIOWrapper.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\CInterfaceIOWrapper.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\Hash.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\Importer.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\IFF.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\MemoryIOWrapper.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ParsingUtils.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\StreamReader.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\StreamWriter.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\StringComparison.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\StringUtils.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\SGSpatialSort.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\SGSpatialSort.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\VertexTriangleAdjacency.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\VertexTriangleAdjacency.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\GenericProperty.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\SpatialSort.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\SpatialSort.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\SceneCombiner.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ScenePreprocessor.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ScenePreprocessor.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\SkeletonMeshBuilder.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\SkeletonMeshBuilder.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\SplitByBoneCountProcess.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\SplitByBoneCountProcess.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ScaleProcess.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ScaleProcess.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\SmoothingGroups.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\StandardShapes.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\StandardShapes.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\TargetAnimation.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\TargetAnimation.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\RemoveComments.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\RemoveComments.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\Subdivision.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\Subdivision.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\scene.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\Vertex.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\LineSplitter.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\TinyFormatter.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\Profiler.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\LogAux.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\Bitmap.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\Bitmap.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\XMLTools.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\Version.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\IOStreamBuffer.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\CreateAnimMesh.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\CreateAnimMesh.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\DefaultLogger.hpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\LogStream.hpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\Logger.hpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\NullLogger.hpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\Win32DebugLogStream.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\DefaultLogger.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\FileLogStream.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\StdOStreamLogStream.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\CalcTangentsProcess.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\CalcTangentsProcess.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ComputeUVMappingProcess.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ComputeUVMappingProcess.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ConvertToLHProcess.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ConvertToLHProcess.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\FindDegenerates.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\FindDegenerates.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\FindInstancesProcess.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\FindInstancesProcess.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\FindInvalidDataProcess.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\FindInvalidDataProcess.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\FixNormalsStep.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\FixNormalsStep.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\GenFaceNormalsProcess.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\GenFaceNormalsProcess.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\GenVertexNormalsProcess.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\GenVertexNormalsProcess.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\PretransformVertices.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\PretransformVertices.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ImproveCacheLocality.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ImproveCacheLocality.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\JoinVerticesProcess.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\JoinVerticesProcess.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\LimitBoneWeightsProcess.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\LimitBoneWeightsProcess.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\RemoveRedundantMaterials.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\RemoveRedundantMaterials.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\RemoveVCProcess.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\RemoveVCProcess.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\SortByPTypeProcess.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\SortByPTypeProcess.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\SplitLargeMeshes.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\SplitLargeMeshes.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\TextureTransform.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\TextureTransform.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\TriangulateProcess.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\TriangulateProcess.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ValidateDataStructure.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ValidateDataStructure.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\OptimizeGraph.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\OptimizeGraph.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\OptimizeMeshes.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\OptimizeMeshes.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\DeboneProcess.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\DeboneProcess.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ProcessHelper.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ProcessHelper.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\PolyTools.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\MakeVerboseFormat.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\MakeVerboseFormat.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\MaterialSystem.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\MaterialSystem.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\3DSConverter.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\3DSHelper.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\3DSLoader.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\3DSLoader.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ColladaHelper.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ColladaLoader.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ColladaLoader.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ColladaParser.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ColladaParser.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ColladaExporter.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ColladaExporter.cpp" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\LWOAnimation.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\LWOAnimation.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\LWOBLoader.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\LWOFileData.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\LWOLoader.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\LWOLoader.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\LWOMaterial.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ObjFileData.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ObjFileImporter.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ObjFileImporter.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ObjFileMtlImporter.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ObjFileMtlImporter.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ObjFileParser.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ObjFileParser.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\ObjTools.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\BlenderLoader.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\BlenderLoader.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\BlenderDNA.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\BlenderDNA.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\BlenderDNA.inl" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\BlenderScene.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\BlenderScene.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\BlenderSceneGen.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\BlenderIntermediate.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\BlenderModifier.h" />
+    <ClCompile Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\BlenderModifier.cpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\code\irrXMLWrapper.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\anim.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\ai_assert.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\camera.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\color4.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\color4.inl" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\config.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\defs.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\Defines.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\cfileio.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\light.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\material.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\material.inl" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\matrix3x3.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\matrix3x3.inl" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\matrix4x4.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\matrix4x4.inl" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\mesh.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\postprocess.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\quaternion.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\quaternion.inl" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\scene.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\metadata.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\texture.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\types.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\vector2.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\vector2.inl" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\vector3.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\vector3.inl" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\version.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\cimport.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\importerdesc.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\Importer.hpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\ProgressHandler.hpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\IOStream.hpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\IOSystem.hpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\cexport.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\Exporter.hpp" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\DefaultIOStream.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\DefaultIOSystem.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\SceneCombiner.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\Compiler\pushpack1.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\Compiler\poppack1.h" />
+    <ClInclude Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\rts\lib\assimp\include\assimp\Compiler\pstdint.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\ZERO_CHECK.vcxproj">
+      <Project>{8490226C-108B-3285-AF6C-02B1B01830CC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\rts\lib\assimp\contrib\irrXML\IrrXML.vcxproj">
+      <Project>{92F302D3-033E-33CF-8A4A-284617B40B09}</Project>
+      <Name>IrrXML</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

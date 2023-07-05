@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.23/Modules/FindDevIL.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/FindZLIB.cmake
+C:/Program Files/CMake/share/cmake-3.23/Modules/SelectLibraryConfigurations.cmake
+T:/Kyle_Shepherd/games/Beyond-All-Reason/data/engine/dev_engine/CMakeFiles/cmake.verify_globs
+T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/rts/CMakeLists.txt
+T:/Kyle_Shepherd/games/Beyond-All-Reason/data/games/spring/rts/build/cmake/FindTCMalloc.cmake

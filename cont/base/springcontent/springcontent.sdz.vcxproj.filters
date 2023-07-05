@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\CMakeFiles\2a45484fb88a6107c4256b606426c138\springcontent.sdz.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\CMakeFiles\5cf9403d14f3f5e3aeade6283911a372\springcontent.sdz.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\games\spring\cont\base\springcontent\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="T:\Kyle_Shepherd\games\Beyond-All-Reason\data\engine\dev_engine\cont\base\springcontent\CMakeFiles\springcontent.sdz" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{74F2E1AC-6A3E-33E2-AEFA-A65E6342BF7F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
